@@ -8,11 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="w-3/5 mx-auto mt-20">
+<body class="xl:w-3/5 mx-auto mt-20">
     <div class="text-center bg-sky-300 p-5">
         <h3 class="text-5xl mb-5">My Text Editor</h3>
         <div class="border-4 border-indigo-500 bg-sky-200 w-9/12 mx-auto">
-            <div class="grid grid-cols-3 p-10 border-b-4 border-indigo-500">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 p-10 border-b-4 border-indigo-500">
                 <div class="flex justify-center space-x-10">
                     <button id="font-bold" class="font-bold cursor-pointer">B</button>
                     <button id="font-italic" class="font-bold cursor-pointer">I</button>
@@ -25,9 +25,11 @@
                     <button id="text-justify" class="font-bold cursor-pointer">J</button>
                 </div>
                 <div class="flex justify-center space-x-10">
-                    <input class="w-1/5 focus:outline-none p-1" type="number" id="font-size">
+                    <!-- <input class="w-1/5 focus:outline-none p-1" type="number" id="font-size"> -->
+                    <button class="font-bold cursor-pointer" id="decrease">F-</button>
+                    <button class="font-bold cursor-pointer" id="increase">F+</button>
 
-                    <input class="cursor-pointer" type="color" value="#0000" name="" id="colors">
+                    <input class="cursor-pointer" type="color" name="" id="colors">
                 </div>
             </div>
             <div class="p-5">
@@ -38,6 +40,8 @@
     <script src="js/script.js"></script>
     <script src="js/font-style.js"></script>
     <script src="js/font-align.js"></script>
+    <script src="js/font-color.js"></script>
+    <script src="js/font-size.js"></script>
 </body>
 
 </html>
