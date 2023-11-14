@@ -14,26 +14,30 @@
         <div class="border-4 border-indigo-500 bg-sky-200 w-9/12 mx-auto">
             <div class="grid grid-cols-3 p-10 border-b-4 border-indigo-500">
                 <div class="flex justify-center space-x-10">
-                    <p>B</p>
-                    <p>I</p>
-                    <p>U</p>
+                    <button id="font-bold" class="font-bold">B</button>
+                    <button id="font-italic" class="font-bold">I</button>
+                    <button id="font-underline" class="font-bold">U</button>
                 </div>
                 <div class="flex justify-center space-x-10">
-                    <p>L</p>
-                    <p>C</p>
-                    <p>R</p>
-                    <p>J</p>
+                    <button id="text-left" class="font-bold">L</button>
+                    <button id="text-center" class="font-bold">C</button>
+                    <button id="text-right" class="font-bold">R</button>
+                    <button id="text-justify" class="font-bold">J</button>
                 </div>
                 <div class="flex justify-center space-x-10">
-                    <p>F</p>
-                    <p>C</p>
+                    <input class="w-1/5 focus:outline-none p-1" type="number" id="font-size">
+
+                    <input type="color" value="#0000" name="" id="colors">
                 </div>
             </div>
             <div class="p-5">
-                <textarea class="w-full focus:outline-none p-5"  name="" id="" cols="100" rows="15"></textarea>
+                <textarea id="text" class="w-full focus:outline-none p-5"  name="" id="" cols="100" rows="15"></textarea>
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
+    <script src="js/font-style.js"></script>
+    <script src="js/font-align.js"></script>
 </body>
 
 </html>
